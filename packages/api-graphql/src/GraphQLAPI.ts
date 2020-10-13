@@ -353,7 +353,7 @@ export class GraphQLAPIClass {
 			return PubSub.subscribe('', {
 				provider: INTERNAL_AWS_APPSYNC_REALTIME_PUBSUB_PROVIDER,
 				appSyncGraphqlEndpoint,
-				authenticationType,
+				aws_appsync_authenticationType: authenticationType,
 				apiKey,
 				query: print(query),
 				region,
